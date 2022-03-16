@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Paranoiacs</h1>
+
+<div id="paranoiacs">
+  <% @paranoiacs.each do |paranoiac| %>
+    <%= render paranoiac %>
+    <p>
+      <%= link_to "Show this paranoiac", paranoiac %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New paranoiac", new_paranoiac_path %>

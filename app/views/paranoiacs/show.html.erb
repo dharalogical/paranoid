@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @paranoiac %>
+
+<div>
+  <%= link_to "Edit this paranoiac", edit_paranoiac_path(@paranoiac) %> |
+  <%= link_to "Back to paranoiacs", paranoiacs_path %>
+
+  <%= button_to "Destroy this paranoiac", @paranoiac, method: :delete %>
+</div>
+
+
+
+
